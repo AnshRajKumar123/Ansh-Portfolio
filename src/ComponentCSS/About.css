@@ -1,0 +1,279 @@
+/* ========== ABOUT (DARK THEME) ========== */
+.about-section {
+    width: 100%;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    padding: 80px 10%;
+    box-sizing: border-box;
+    background: #0d0d0d;
+    /* dark bg */
+    color: #e6eef2;
+    font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* LEFT COLUMN */
+.about-left {
+    flex: 1.15;
+    max-width: 900px;
+    position: relative;
+}
+
+.about-sub {
+    color: #9fb4bb;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+/* big headline */
+.about-hero {
+    font-size: 47px;
+    line-height: 1.02;
+    margin: 0;
+    color: #ffffff;
+    font-family: var(--Font3);
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+/* thin divider (subtle light) */
+.about-divider {
+    height: 0.1px;
+    border: none;
+    width: 60%;
+    background-color: #ffffff7c;
+    margin: 18px 0 26px 0;
+    border-radius: 2px;
+}
+
+/* paragraphs */
+.about-paragraph {
+    color: #b9c7c9;
+    max-width: 85%;
+    line-height: 1.75;
+    font-size: 15.5px;
+    margin-bottom: 18px;
+}
+
+/* Drives header */
+.drives-title {
+    margin-top: 48px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* cards container */
+.drives-cards {
+    display: flex;
+    gap: 22px;
+    margin-top: 18px;
+    align-items: stretch;
+}
+
+/* single card */
+.drive-card {
+    flex: 1;
+    min-width: 220px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+/* icons + texts */
+.card-icon {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: 800;
+    margin: 6px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.card-sub {
+    color: #9fb4bb;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* hover */
+.drive-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* highlight (pink) */
+.drive-card.highlight {
+    border-color: rgba(235, 87, 110, 0.28);
+    box-shadow: 0 20px 60px rgba(235, 87, 110, 0.06);
+    background: linear-gradient(180deg, rgba(235, 87, 110, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+/* highlight hover */
+.drive-card.highlight:hover {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 34px 90px rgba(235, 87, 110, 0.14);
+    border-color: rgba(235, 87, 110, 0.38);
+}
+
+/* ===== RIGHT COLUMN: OVAL + TIMELINE ===== */
+.about-right {
+    flex: 0.55;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* glass oval frame */
+.oval-frame {
+    width: 380px;
+    height: 380px;
+    border-radius: 160px / 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 40%, transparent 70%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(255, 255, 255, 0.02);
+    position: relative;
+    overflow: hidden;
+}
+
+/* inner subtle rings for the oval */
+.oval-frame::before,
+.oval-frame::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    pointer-events: none;
+}
+
+.oval-frame::before {
+    width: 200px;
+    height: 320px;
+    border-radius: 140px / 200px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.oval-frame::after {
+    width: 160px;
+    height: 260px;
+    border-radius: 110px / 150px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.oval-frame img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* timeline to the right of oval */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 310px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.tl-year {
+    min-width: 56px;
+    color: #b6d3d8;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.tl-body {
+    color: #d6e6e8;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .about-section {
+        padding: 60px 6%;
+        flex-direction: column;
+    }
+
+    .about-left {
+        width: 100%;
+        max-width: none;
+    }
+
+    .right-inner {
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    .oval-frame {
+        width: 200px;
+        height: 320px;
+    }
+
+    .timeline {
+        max-width: 100%;
+    }
+
+    .play-overlay {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .right-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oval-frame {
+        width: 180px;
+        height: 260px;
+        margin-bottom: 18px;
+    }
+
+    .timeline {
+        width: 100%;
+        align-items: center;
+    }
+
+    .timeline-item {
+        text-align: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .tl-year {
+        min-width: auto;
+    }
+}

@@ -1,0 +1,208 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d0d0d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------- */
+/*           LEFT SIDE               */
+/* -------------------------------- */
+.hero-left {
+    width: 55%;
+}
+
+.hero-intro {
+    font-size: 22px;
+    opacity: 0.7;
+}
+
+.hero-name span {
+    font-size: 60px;
+    font-weight: 800;
+    color: #00eaff;
+    letter-spacing: 1px;
+    font-family: var(--Font2);
+}
+
+.hero-role {
+    font-size: 28px;
+    margin-top: 12px;
+    line-height: 38px;
+    opacity: 0.9;
+    height: 40px;
+    /* fixes layout shifting */
+    display: flex;
+    align-items: center;
+}
+
+.hero-role span {
+    font-family: var(--Font3);
+    /* letter-spacing: 2px; */
+}
+
+.hero-desc {
+    margin-top: 18px;
+    width: 80%;
+    line-height: 26px;
+    opacity: 0.75;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.hire {
+    background: #00eaff;
+    color: black;
+}
+
+.hire:hover {
+    background: white;
+}
+
+.cv {
+    background: transparent;
+    border: 1px solid #00eaff;
+    color: #00eaff;
+}
+
+.cv:hover {
+    background: #00eaff;
+    color: black;
+}
+
+/* Social icons */
+
+.FollowMe {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.FollowMe span {
+    font-size: 17px;
+}
+
+.hero-social {
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+}
+
+.hero-social>* {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-social>*:hover {
+    color: #00eaff;
+    transform: scale(1.18);
+}
+
+.DotSector {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    padding: 11px 18px;
+    border-radius: 50px;
+    background-color: #ffffff1f;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.HoriZontalLine {
+    height: 0.1px;
+    border: none;
+    background-color: #ffffff90;
+    margin-top: 2rem;
+}
+
+/* -------------------------------- */
+/*           RIGHT SIDE             */
+/* -------------------------------- */
+
+.hero-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img-wrap {
+    position: relative;
+    width: 480px;
+    height: 480px;
+}
+
+.hero-img-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -40px;
+    border-radius: 85% 15% 100% 0% / 32% 68% 32% 68%;
+    background: linear-gradient(135deg,
+            #2fedf7 45%,
+            #2bb0ff 100%);
+    opacity: 0.55;
+    filter: blur(9px);
+    z-index: 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10px, -10px);
+    }
+}
+
+.hero-img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: -40px;
+    border-radius: 85% 15% 100% 0% / 32% 68% 32% 68%;
+    background: linear-gradient(135deg,
+            #2fedf7 45%,
+            #2bb0ff 100%);
+    opacity: 0.55;
+    filter: blur(100000px);
+    z-index: 0;
+}
+
+.hero-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 85% 15% 100% 0% / 32% 68% 32% 68%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 4px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
