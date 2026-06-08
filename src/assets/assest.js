@@ -5,6 +5,7 @@ import Project1Image from './ImageA/PortfolioImage.png'
 import Project2Image from './ImageA/ImageGallary.png'
 import Project3Image from './ImageA/MidNFooDWeb.png'
 import Project4Image from './ImageA/ZenitsuWebsite.png'
+import Project5Image from './ImageA/ParklyImage.png'
 
 export const Portfolio = {
     ImageS1,
@@ -14,4 +15,5 @@ export const Portfolio = {
     Project2Image,
     Project3Image,
     Project4Image,
+    Project5Image,
 }
