@@ -43,7 +43,7 @@ const projects = [
         img: Portfolio.Project1Image,
         tech: ["React", "LocalStorage", "UI/UX"],
         live: "#",
-        // github: "#",
+        github: "#",
     },
     {
         title: "Image Cropper",
