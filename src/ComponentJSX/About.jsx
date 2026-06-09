@@ -69,7 +69,7 @@ const About = () => {
             >
                 <div className="right-inner">
                     <div className="oval-frame">
-                        <img src={Portfolio.ImageS3} />
+                        <img src={Portfolio.About_Image} />
                     </div>
 
                     <div className="timeline">
