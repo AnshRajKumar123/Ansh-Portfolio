@@ -6,12 +6,16 @@ import About from "./ComponentJSX/About";
 import Projects from "./ComponentJSX/Projects";
 import Services from "./ComponentJSX/Services";
 import Contact from "./ComponentJSX/Contact";
+import Cursor from "./ComponentJSX/Cursor";
 
 function App() {
   const [showProgress, setShowProgress] = useState(true);
 
   return (
     <>
+
+      <Cursor />
+
       {showProgress ? (
         <ProgressSec onFinish={() => setShowProgress(false)} />
       ) : (
